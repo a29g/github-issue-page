@@ -30,6 +30,7 @@
   
   .issue-title:hover {
     color: var(--blue);
+    cursor: pointer;
   }
   
   .issue-details {

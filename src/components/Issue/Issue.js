@@ -15,7 +15,11 @@ const Issue = ({ issueData }) => {
         <IconList type={issueData.state} />
       </div>
       <div className="issue-details">
-        <span className="issue-title">{issueData.title}</span>
+        <span className="issue-title">
+          <a className="issue-title" href={issueData.html_url}>
+            {issueData.title}
+          </a>
+        </span>
         <span className="issue-labels">
           {issueData.labels.map((label) => (
             <Label key={label.id} label={label} />
