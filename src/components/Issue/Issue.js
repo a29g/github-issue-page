@@ -25,13 +25,13 @@ const Issue = ({ issueData }) => {
             <Label key={label.id} label={label} />
           ))}
         </span>
-      </div>
-      <div className="issue-meta-data">
-        #{issueData.number} {issueData.state === "open" ? "opened" : "closed"}{" "}
-        {time} by{" "}
-        <a className="issue-user" href={issueData.user.url}>
-          {issueData.user.login}
-        </a>
+        <div className="issue-meta-data">
+          #{issueData.number} {issueData.state === "open" ? "opened" : "closed"}{" "}
+          {time} by{" "}
+          <a className="issue-user" href={issueData.user.url}>
+            {issueData.user.login}
+          </a>
+        </div>
       </div>
       <div className="issue-other-details">
         <div className="issue-details-col">
